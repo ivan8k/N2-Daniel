@@ -4,15 +4,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	
-	<title>Gyazo API</title>
+	<title>N2 Daniel</title>
 	
 	<!-- css -->
-	<!-- link rel="stylesheet" href="styles.css" -->
+	<!-- link rel="stylesheet" href="bootstrap4/css/bootstrap.css" -->
+	<link rel="stylesheet" href="styles.css">
 	
 	<!-- javascript -->
+	<!-- cript src="bootstrap4/js/bootstrap.js"></script -->
 	<script src="script.js"></script>
 </head>
 <body>
-	<h1>TESTE<h1>
+	<p>Insira uma URL para adicionar seu preview:</p>
+	<div class="inputbox">
+		<input id="input" class="input" type="text">
+		<button class="button" onclick="buttonClick()">»</button>
+	</div>
+	<div id="mainbox">
+		<div class="previewbox" id="preview0">
+			<p class="title"><b>Google</b></p>
+			<img class="image" alt="" src="http://www.google.com/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png"></img>
+			<p class="desc">Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.</p>
+		</div>
+	</div>
 </body>
 </html>

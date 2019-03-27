@@ -1,25 +1,42 @@
-function user_auth()
+function makePreviewBox(title, image, desc)
+{
+	
+	var ret = '<div class="previewbox" id="preview' + n + '"><p class="title"><b>' + title +
+	'</b></p><img class="image" alt="" src="' + image + '"></img><p class="desc">' + desc + '</p></div>';
+	n += 1;
+	return ret;
+}
+
+function link_preview(link)
 {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function()
 	{
 		if (this.readyState == 4)
 		{
-			console.log(this.responseText);
-			//var data = JSON.parse(this.responseText);
-			/*if (data["messages"] == "success")
+			var data = JSON.parse(this.responseText);
+			if(data.title == "")
 			{
-				var date = new Date(data["response"]["0"]["risetime"]*1000);
-				alert(date.toString());
+				alert("Erro");
+				return;
 			}
-			else
-				alert("error");*/
+			document.getElementById("mainbox").innerHTML = makePreviewBox(data.title, data.image, data.description) +
+			document.getElementById("mainbox").innerHTML;
+			/*document.getElementById("title").innerHTML = "<b>" + data["title"] + "</b>";
+			document.getElementById("image").src = data["image"];
+			document.getElementById("desc").innerHTML = data["description"];*/
 		}
 	};
-	xhttp.open("GET", "https://gyazo.com/oauth/authorize?client_id=1575259b32649a2ec3fa4c146bef1a151882d737a005b8206bb9c772e423261b&redirect_uri=https%3A%2F%2Fivan8k.github.io%2Findex.html&response_type=code", true);
-	xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+	xhttp.open("GET", "https://api.linkpreview.net?key=5c9bb9554b13d41f1a4f7e9c9800871a1632a2dea5d06&q=" + link, true);
+	//xhttp.setRequestHeader("Access-Control-Allow-Origin", "");
 	xhttp.send();
 	//return pos;
 }
 
-user_auth();
+function buttonClick()
+{
+	link_preview(document.getElementById("input").value);
+}
+
+var n = 1;
+//link_preview("https://www.google.com");
