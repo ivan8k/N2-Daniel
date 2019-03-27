@@ -1,0 +1,103 @@
+/*html
+{
+    height: 100%;
+}
+
+body
+{
+background-color: lightgray;
+height: inherit;
+}*/
+
+.chatsuperbox
+{
+    padding-top: 15px;
+    top:65px;
+    float: right;
+    position: sticky;
+    height: 500px;
+    width: 25%;
+}
+
+.chatbox
+{
+    height: 60%;
+    background-color: lightblue;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.chatblob
+{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    background-color: green;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    margin-left: 40px;
+}
+
+.chatblob.left
+{
+    margin-left:0;
+    margin-right:40px;
+    border: 2px solid darkgray;
+    background-color: gray;
+}
+
+.chataux
+{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    scroll-behavior: smooth;
+}
+
+.input
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#input
+{
+    width: 70%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+#button
+{
+    float: right;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+table
+{
+    width: 100%;
+}
+
+th
+{
+    text-align: center;
+}
+
+iframe
+{
+    padding-top: 20px;
+    border: none;
+    width: 70%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

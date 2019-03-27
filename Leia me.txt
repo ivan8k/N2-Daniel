@@ -1,0 +1,14 @@
+Olá caro Leitor!
+
+Este site, infelizmente, está fora do ar por motivos de fechamento do servidor.
+Entretanto estaremos lhe enviando o site completo para acesso offline.
+
+Para utilizá-lo, abra o arquivo chamado: "Index.html" com o seu navegador de internet preferido (Evitar Internet Explorer e Edge por questões de compatibilidade de tecnologia).
+
+Não é necessário abrir nenhum outro arquivo para utilização, entretanto, não exclua nenhum deles para correto funcionamento.
+
+O chatbot foi projetado para responder perguntas simples sobre o conteúdo do site, para que o leitor não tenha que procurar por um tópico enquando lê outro.
+Exemplos de perguntas simples são: "Quando foi criado o primeiro computador?", "O que é a CPU?" ou "O que é um circuito integrado?".
+
+Obrigado!
+Bom proveito!
