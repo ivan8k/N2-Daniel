@@ -17,7 +17,7 @@ function user_auth()
 		}
 	};
 	xhttp.open("GET", "https://gyazo.com/oauth/authorize?client_id=1575259b32649a2ec3fa4c146bef1a151882d737a005b8206bb9c772e423261b&redirect_uri=https%3A%2F%2Fivan8k.github.io%2Findex.html&response_type=code", true);
-	xhttp.setRequestHeader("Origin", "https://ivan8k.github.io/");
+	xhttp.setRequestHeader("Access-Control-Allow-Origin", "https://gyazo.com/");
 	xhttp.send();
 	//return pos;
 }
