@@ -1,97 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype HTML>
+<html>
 <head>
-  <title>Arquitetura de Computadores</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <script src="jquery.min.js"></script>
-  <script src="popper.min.js"></script>
-  <script src="bootstrap.min.js"></script>
-  <!--
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  -->
-  <script src="chat_table.js"></script>
-  <script src="chat_script.js"></script>
-  <link rel="stylesheet" href="styles.css">
-  <script>
-    function resize(obj)
-    {
-      obj.style.height = obj.contentWindow.document.body.scrollHeight + 10 + 'px';
-      document.getElementById("1").style.height = 0.9 * window.outerHeight + 'px';
-      console.log(window.outerHeight);
-    }
-  </script>
-  <style>
-    .carousel-inner img
-      {
-        width:  100%;
-        max-height: 70%;
-      }
-      #outlinetitle{
-        color: #fff;
-        text-shadow: 0px 5px 8px black;
-      }
-  </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<title>Gyazo API</title>
+	
+	<!-- css -->
+	<!-- link rel="stylesheet" href="styles.css" -->
+	
+	<!-- javascript -->
+	<script src="script.js"></script>
 </head>
 <body>
-<div class="jumbotron jumbotron-fluid" style="background-color: cornflowerblue; height:100px; margin:0px; padding:0px;">
-  <div class="container" style="text-align:center">
-    <h1 id="outlinetitle" class="display-3"><strong>Arquitetura de Computadores</strong></h1>
-  </div>
-</div>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
- <a class="navbar-brand" href="home.html" target="meuframe">Home</a>
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="historiadacomputacao.html" target="meuframe">História da Computação</a> <!--onclick="var ifr=document.getElementById('framinho'); ifr.src=historiadacomputacao.html;-->
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="introducao.html" target="meuframe">Introduçao</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="acpueocomputador.html" target="meuframe">A CPU e o Computador</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="adescricaodocomputador.html" target="meuframe">A Descrição do Computador</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="ofuncionamentodomicroprocessador.html" target="meuframe">O Funcionamento do Microprocessador</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="referenciasbibliografics.html" target="meuframe">Referências Bibliográficas</a>
-    </li>
-
-    <!--<li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Tópico3
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Subtópico1</a>
-        <a class="dropdown-item" href="#">Subtópico2</a>
-        <a class="dropdown-item" href="#">Subtópico3</a>
-      </div>
-    </li>-->
-  </ul>
-</nav>
-
-<div id="1" class="chatsuperbox" style="padding:0px; width: 29%;" onload="resize2(this)">
-    <h3>ChatBot</h3>
-    <div class="chatbox" style="height:90% !important;">
-        <div id="chatbox"></div>
-        <div id="scroll" style="height: 0px"></div>
-    </div>
-    <div class="input">
-        <input id="input" type="text">
-        <button id="button" type="button" onclick="send()">Send</button>
-    </div>
-</div>
-
-<iframe id="framinho" name="meuframe" onload="resize(this)" src="home.html"  style="height:600px; padding:0px;">
-</iframe>
-
+	<h1>TESTE<h1>
 </body>
 </html>
