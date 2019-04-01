@@ -2,29 +2,123 @@ html
 {
 	height: 100vh;
 	box-sizing: border-box;
-	background-image: linear-gradient(to bottom right, white, #E0E0E0);
 	font-family: "verdana";
 	overflow-x: hidden;
 }
 
 body
 {
+	margin: 0px;
 }
 
-.button
+.title
+{
+	line-height: 50px;
+	padding-left: 10px;
+	font-weight: 1000;
+	font-size: 20px;
+}
+
+.aux
+{
+	flex-basis: auto;
+}
+
+.grow-shrink
+{
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.fixed
 {
 	flex-grow: 0;
 	flex-shrink: 0;
-	flex-basis: auto;
-	box-sizing: border-box;
-	height: 40px;
-	width:40px;
-	font-size: 16px;
-	border-radius: 50%;
-	background-color: rgb(100, 160, 255);
-	border: 3px solid rgb(75, 125, 200);
-	color: white;
-	padding-bottom: 2px;
+}
+
+.flex-row
+{
+	display: flex;
+	display: flex;
+	flex-direction: row;
+}
+
+.menubar
+{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height:50px;
+	padding: 3px;
+	background-color: rgba(255, 255, 255, 0);
+	border-width: 0px 0px 2px 0px;
+	border-color: rgba(150, 150, 150, 0.3);
+	border-style: solid;
+}
+
+.menu
+{
+	position: fixed;
+	top: 58px;
+	right:0px;
+	width: 250px;
+	background-color: white;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menuitem
+{
+	height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.menutext
+{
+	text-transform: uppercase;
+	color: rgb(150, 150, 150);
+	font-weight: 1000;
+	letter-spacing: .007px;
+}
+
+.switchbase
+{
+	fill:rgba(180, 180, 180, 0.5);
+}
+
+.switchbutton
+{
+	fill:rgba(120, 120, 120, 1);
+	transition: fill .15s ease-in-out;
+}
+
+.switchbutton:hover
+{
+	fill:rgba(80, 140, 230, 1);
+}
+
+.switchbuttonon
+{
+	fill:rgba(80, 140, 230, 1);
+	transition: fill .15s ease-in-out;
+}
+
+.switchbuttonon:hover
+{
+	fill:rgba(65, 65, 65, 1);
+}
+
+.appbox
+{
+	margin: 58px 5px 0px;
+	height: 100%;
+	padding-top: 16px;
+}
+
+.inputbox
+{
+	display: flex;
+	flex-direction: row;
 }
 
 .input
@@ -32,13 +126,55 @@ body
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: auto;
-	box-sizing: border-box;
 	min-width: 60%;
 	border-radius: 15px;
-	border: 3px solid lightgray;
+	border: none;
 	padding: 0px 15px;
 	margin-right: 5px;
 	font-size: 20px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button
+{
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+	height: 40px;
+	width:40px;
+	font-size: 16px;
+	border: none;
+	border-radius: 50%;
+	background-color: rgb(100, 160, 255);
+	color: white;
+	padding-bottom: 2px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.previewbox
+{
+	box-sizing: border-box;
+	border-radius: 5px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	padding: 5px;
+	overflow: auto;
+	margin-top: 20px;
+	float: left;
+}
+
+.previewbox:last-of-type
+{
+	margin-bottom: 5px;
+}
+
+.title
+{
+	font-size: 25px;
+	margin: 0px;
+	margin-bottom: 5px;
 }
 
 .image
@@ -53,32 +189,31 @@ body
 	margin-bottom: 5px;
 }
 
-.previewbox
-{
-	border-radius: 5px;
-	box-sizing: border-box;
-	width: 100%;
-	background-color: rgba(250, 250, 255, 1);
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-	padding: 5px;
-	overflow: auto;
-	margin-top: 20px;
-}
-
-.inputbox
-{
-	display: flex;
-	flex-direction: row;
-}
-
-.title
-{
-	font-size: 25px;
-	margin: 0px;
-	margin-bottom: 5px;
-}
-
 .desc
 {
 	margin: 0px;
+}
+
+.emptybutton
+{
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	background: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+#background
+{
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background-image: linear-gradient(to bottom right, white, #E0E0E0);
+	z-index: -1;
+}
+
+#menubutton
+{
+	padding-right: 10px;
 }

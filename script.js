@@ -1,7 +1,15 @@
+var themeButtonPressed = false;
+
 function makePreviewBox(title, image, desc)
 {
 	
-	var ret = '<div class="previewbox" id="preview' + n + '"><p class="title"><b>' + title +
+	var ret;
+	console.log(themeButtonPressed);
+	if (themeButtonPressed)
+		ret = '<div class="previewbox" id="preview' + n + '" style="background-color: rgba(50, 50, 50, 1)"><p class="title"><b>' + title +
+	'</b></p><img class="image" alt="" src="' + image + '"></img><p class="desc">' + desc + '</p></div>';
+	else
+		ret = '<div class="previewbox" id="preview' + n + '"><p class="title"><b>' + title +
 	'</b></p><img class="image" alt="" src="' + image + '"></img><p class="desc">' + desc + '</p></div>';
 	n += 1;
 	return ret;
@@ -36,6 +44,12 @@ function link_preview(link)
 function buttonClick()
 {
 	link_preview(document.getElementById("input").value);
+	document.getElementById("input").value = "";
+}
+
+function darkTheme()
+{
+	
 }
 
 var n = 1;

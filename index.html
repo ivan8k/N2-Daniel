@@ -15,17 +15,40 @@
 	<script src="script.js"></script>
 </head>
 <body>
-	<p>Insira uma URL para adicionar seu preview:</p>
-	<div class="inputbox">
-		<input id="input" class="input" type="text">
-		<button class="button" onclick="buttonClick()">»</button>
+	<div id="background"></div>
+	<div class="menubar flex-row">
+		<p class="title aux grow-shrink">URL Preview</p>
+		<button class="emptybutton" default="button" id="menubutton">
+			<svg width="50" height="50">
+				<rect x="5" y="7" rx="5" ry="5" width="40" height="8" style="fill:gray" />
+				<rect x="5" y="21" rx="5" ry="5" width="40" height="8" style="fill:gray" />
+				<rect x="5" y="35" rx="5" ry="5" width="40" height="8" style="fill:gray" />
+			</svg>
+		</button>
 	</div>
-	<div id="mainbox">
-		<div class="previewbox" id="preview0">
-			<p class="title"><b>Google</b></p>
-			<img class="image" alt="" src="http://www.google.com/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png"></img>
-			<p class="desc">Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.</p>
+	<div class="menu" style="display: none">
+		<div class="menuitem flex-row">
+			<p class="menutext aux grow-shrink">TEMA ESCURO</p>
+			<button class="emptybutton aux fixed" default="button" id="theme">
+				<svg width="50" height="50">
+					<rect class="switchbase" x="5" y="15" rx="5" ry="5" width="40" height="20" />
+					<rect class="switchbutton" id="switchtheme" x="7" y="17" rx="5" ry="5" width="20" height="16" style="display: initial" />
+					<rect class="switchbuttonon" id="switchthemeon" x="23" y="17" rx="5" ry="5" width="20" height="16" style="display: none" />
+				</svg>
+			</button>
+		</div>
+	</div>
+	<div class="appbox">
+		<p>Insira uma URL para adicionar seu preview:</p>
+		<div class="inputbox">
+			<input id="input" class="input" type="text">
+			<button id="button" class="button">»</button>
+		</div>
+		<div id="mainbox">
 		</div>
 	</div>
 </body>
+<footer>
+	<script src="events.js"></script>
+</footer>
 </html>
